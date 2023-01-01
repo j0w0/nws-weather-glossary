@@ -1,1 +1,0 @@
-export { getWeatherGlossary } from "./getWeatherGlossary";

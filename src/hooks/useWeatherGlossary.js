@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { getWeatherGlossary } from "../api";
+import { getWeatherGlossary } from "../api/getWeatherGlossary";
 
 export const useWeatherGlossary = () => {
   const [glossary, setGlossary] = useState([]);
