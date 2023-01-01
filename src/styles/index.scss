@@ -1,0 +1,30 @@
+@import "bootstrap/scss/bootstrap";
+
+:root {
+  --theme-color-light: #ffffff;
+  --theme-color-dark: #213547;
+  --theme-color-darker: #1a2024;
+}
+
+#App {
+  min-height: 100vh;
+  color: var(--theme-color-dark);
+  background-color: var(--theme-color-light);
+
+  &.theme-dark {
+    color: var(--theme-color-light);
+    background-color: var(--theme-color-darker);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  #App {
+    color: var(--theme-color-light);
+    background-color: var(--theme-color-darker);
+
+    &.theme-light {
+      color: var(--theme-color-dark);
+      background-color: var(--theme-color-light);
+    }
+  }
+}
